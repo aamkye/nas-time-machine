@@ -1,12 +1,27 @@
-# Time Machine Backup (for now, unencrypted only)
+# Time Machine Backup
+
 
 [![Time Machine Backup](./img/image1.png)](./img/image1.png)
+
+## Important note
+
+```bash
+#################################################
+#                                               #
+# This version does __unencrypted__ backup only #
+#                                               #
+#################################################
+```
 
 ## Initial repos / articles
 
 * https://github.com/dperson/samba
 * https://github.com/solidnerd/docker-avahi
 * https://alexlubbock.com/time-machine-network-backup-linux
+
+## Future encrypted volume will be taken from:
+
+* https://github.com/odarriba/docker-timemachine
 
 ## Makefile
 

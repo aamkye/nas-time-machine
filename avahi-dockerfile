@@ -1,0 +1,7 @@
+FROM alpine:3.8
+
+RUN apk add --no-cache \
+    avahi \
+    avahi-tools
+
+ENTRYPOINT ["avahi-daemon"]

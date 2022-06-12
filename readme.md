@@ -1,4 +1,4 @@
-# Time Machine Backup
+# Time Machine Backup (for now, unencrypted only)
 
 [![Time Machine Backup](./img/image1.png)](./img/image1.png)
 

@@ -27,4 +27,4 @@ services:
    tty: true
    volumes:
      - /nas/timemachine:/backup:z
-   command: '-s "Time Machine Backup;/backup;yes;no" -u "backup;backup" -p'
+   command: '-s "Time Machine Backup;/backup;yes;no;no" -u "backup;backup;1000;backup;1000" -p'

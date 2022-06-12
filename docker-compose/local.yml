@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+ avahi:
+   image: local/avahi:latest
+
+ samba:
+   image: local/samba:latest

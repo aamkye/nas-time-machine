@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+ avahi:
+   image: solidnerd/avahi:latest
+
+ samba:
+   image: dperson/samba:latest

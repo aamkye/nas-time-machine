@@ -6,21 +6,45 @@ build:
 	docker build -f dockerfiles/samba-dockerfile -t local/samba:latest dockerfiles/
 
 run-local:
-	docker-compose -d -f docker-compose/local-docker-compose.yml up
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/local.yml \
+		up -d
 
 run:
-	docker-compose -d -f docker-compose/docker-compose.yml up
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/public.yml \
+		up -d
 
 logs-local:
-	docker-compose -f docker-compose/local-docker-compose.yml logs
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/local.yml \
+		logs
 
 logs:
-	docker-compose -f docker-compose/docker-compose.yml logs
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/public.yml \
+		logs
 
 stop-local:
-	docker-compose -f docker-compose/local-docker-compose.yml down
-	docker-compose -f docker-compose/local-docker-compose.yml rm
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/local.yml \
+		down
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/local.yml \
+		rm
 
 stop:
-	docker-compose -f docker-compose/docker-compose.yml down
-	docker-compose -f docker-compose/docker-compose.yml rm
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/public.yml \
+		down
+	docker-compose \
+		-f docker-compose/base-docker-compose.yml \
+		-f docker-compose/public.yml \
+		rm

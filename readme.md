@@ -33,7 +33,7 @@ Please modify everything if needed.
 
 ```yaml
 # docker-compose.yml:30-32
-(...)
+  (...)
    volumes:
      - /XYZ:/backup:z
    command: '-s "Time Machine Backup;/backup;yes;no" -u "backup;backup" -p'
@@ -41,6 +41,7 @@ Please modify everything if needed.
 
 ```xml
 <!-- avahi/services/smb.service:5-9 -->
+  (...)
   <service>
     <type>_adisk._tcp</type>
     <txt-record>sys=waMa=0,adVF=0x100</txt-record>

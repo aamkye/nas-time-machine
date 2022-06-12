@@ -8,10 +8,19 @@
 
 ## Makefile
 
+* `make all`
+* `make all-local`
 * `make build`
 * `make run`
+* `make run-local`
 * `make stop`
+* `make stop-local`
 * `make logs`
+* `make logs-local`
+
+## Local sufix
+
+It's for building images from scratch.
 
 ## For ZFS users
 
